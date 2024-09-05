@@ -1,0 +1,97 @@
+/* App Styles */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap"); */
+html,
+body,
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  /* background-image: url(bg.jpg); */
+  background: linear-gradient(to top, #ffa7b5e6 18%, #ccf6ff 72%);
+  background-attachment: fixed;
+
+  background-position: center;
+}
+
+.my-column {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  margin: 10% auto;
+}
+
+.my-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 98%;
+  margin: 8px auto;
+  padding: 0;
+}
+
+.my-row .my-row-cell {
+  /* max-width: 95%; */
+  padding: 0px;
+  margin: 8px;
+  border: 1px solid grey;
+  /* background-color: rgba(0, 0, 0, 1); */
+}
+
+.my-row .one-cell-in-row {
+  width: 60%;
+}
+.my-row-cell .my-row-cell-caption {
+  background-color: black;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 16px;
+  padding: 6px;
+}
+.row-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 420px;
+  overflow: scroll;
+  margin: 8px auto;
+}
+.col-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.edit-button {
+  border: 1px outset grey;
+  border-radius: 20px;
+  background-color: azure;
+  margin: 6px auto;
+  box-shadow: 2px 2px 4x rgba(24, 24, 24, 0.8);
+  background-color: lightgray;
+}
+
+.panel {
+  padding: 0;
+  background-color: white;
+  /* border-style: 1px solid red; */
+  overflow: auto;
+  /* opacity: 50%; */
+  /* transition: opacity 4s; */
+}
